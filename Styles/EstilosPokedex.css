@@ -1,0 +1,59 @@
+
+h1{
+    background-color: aqua;
+    text-align: center;
+    font-size: 90px;
+}
+
+h2{
+    font-size: 25px;
+    padding-bottom: 3rem;
+    padding-top: 1rem;
+}
+
+div{
+    text-align: center;
+}
+
+.imgPokemon{
+    background-color: darkgoldenrod;
+    width: 350px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1.5rem;
+}
+
+.busqueda{
+    background-color: burlywood;
+    /* display: ; */
+}
+
+.pokedex{
+    display: inline-flex;
+    width: 100%;
+}
+
+.lateral, .principal{
+    border-radius: 1.5rem;
+    margin: 1rem;
+}
+
+.lateral{
+    background-color: aquamarine;
+    width: 30%;
+}
+
+.principal{
+    background-color: bisque;
+    width: 60%;
+}
+
+.datosPokemon{
+    background-color: grey;
+    /* display: inline-block; */
+}
+
+.tablaDatos{
+    background-color: cadetblue;
+    width: 100%;
+}

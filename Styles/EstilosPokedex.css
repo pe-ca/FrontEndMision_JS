@@ -1,6 +1,5 @@
 body{
     background-image: url("../Img/forest.png");
-
 }
 
 div .logo{
@@ -10,8 +9,13 @@ div .logo{
 
 h2{
     font-size: 25px;
-    padding-bottom: 3rem;
-    padding-top: 1rem;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+    border-radius: 15px;
+}
+
+h3{
+    font-size: 40px;
 }
 
 div{
@@ -24,11 +28,20 @@ div{
     margin-top: 1rem;
     margin-bottom: 1rem;
     border-radius: 1.5rem;
+    opacity: 100%;
 }
 
 .busqueda{
-    background-color: burlywood;
-    /* display: ; */
+    width: 100%;
+}
+
+.busqueda input, button{
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: .7rem;
+    text-align: center;
+    opacity: 50%;
 }
 
 .pokedex{
@@ -37,26 +50,30 @@ div{
 }
 
 .lateral, .principal{
+    background-color: rgba(255, 228, 196, .4);
     border-radius: 1.5rem;
     margin: 1rem;
 }
 
 .lateral{
-    background-color: aquamarine;
     width: 30%;
 }
 
 .principal{
-    background-color: bisque;
     width: 60%;
 }
 
 .datosPokemon{
-    background-color: grey;
-    /* display: inline-block; */
+    background-color: rgba(128, 128, 128, .5);
+    border-radius: 10px;
+    padding: 1rem;
 }
 
 .tablaDatos{
     background-color: cadetblue;
     width: 100%;
+}
+
+table, tr, th, td{
+    border-radius: 10px;
 }

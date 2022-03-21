@@ -8,45 +8,45 @@
     <title>Pokedex</title>
 </head>
 <body>
-<h1>Pokedex</h1>
-<div class="busqueda">
-    <input type="text" placeholder="Busca por Nombre o Id" id="nombrePokemon" name="nombrePokemon">
-    <button onclick="getPokemon()">Buscar Pokemon</button>
-</div>
-<div class="pokedex">
-    <div class="lateral">
-        <h2>Anterior</h2>
-        <img src="./Img/pokeball.png" alt="pokeball" class="imgPokemon" id="imgPokemonAnt">
-        <h3 id="NombreAnt">Nombre</h3>
+    <div><img src="./Img/PokemonLogo.png" alt="Pokemon" class="logo"></div>
+    <div class="busqueda">
+        <input type="text" placeholder="Busca por Nombre o Id" id="nombrePokemon" name="nombrePokemon">
+        <button onclick="getPokemon()">Buscar Pokemon</button>
     </div>
-    <div class="principal">
-        <img src="./Img/pokeball.png" alt="pokeball" class="imgPokemon" id="imgPokemon">
-        <div class="datosPokemon">
-            <h3 id="Nombre">Nombre</h3>
-            <table class="tablaDatos">
-                <tr>
-                    <th>Tipo</th>
-                    <th>Estadisticas</th>
-                </tr>
-                <tr>
-                    <td id="Tipo"></td>
-                    <td id="Estadisticas"></td>
-                </tr>
-                <tr>
-                    <th colspan="2">Movimientos</th>
-                </tr>
-                <tr>
-                    <td colspan="2" id="Movimientos"></td>
-                </tr>
-            </table>
+    <div class="pokedex">
+        <div class="lateral">
+            <h2>Anterior</h2>
+            <img src="./Img/pokeball.png" alt="pokeball" class="imgPokemon" id="imgPokemonAnt">
+            <h3 id="NombreAnt">Nombre</h3>
+        </div>
+        <div class="principal">
+            <img src="./Img/pokeball.png" alt="pokeball" class="imgPokemon" id="imgPokemon">
+            <div class="datosPokemon">
+                <h3 id="Nombre">Nombre</h3>
+                <table class="tablaDatos">
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Estadisticas</th>
+                    </tr>
+                    <tr>
+                        <td id="Tipo"></td>
+                        <td id="Estadisticas"></td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Movimientos</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2" id="Movimientos"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="lateral">
+            <h2>Siguiente</h2>
+            <img src="./Img/pokeball.png" alt="pokeball" class="imgPokemon" id="imgPokemonSig">
+            <h3 id="NombreSig">Nombre</h3>
         </div>
     </div>
-    <div class="lateral">
-        <h2>Siguiente</h2>
-        <img src="./Img/pokeball.png" alt="pokeball" class="imgPokemon" id="imgPokemonSig">
-        <h3 id="NombreSig">Nombre</h3>
-    </div>
-</div>
 
 
 

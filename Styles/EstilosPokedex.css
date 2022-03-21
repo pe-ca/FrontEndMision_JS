@@ -1,8 +1,11 @@
+body{
+    background-image: url("../Img/forest.png");
 
-h1{
-    background-color: aqua;
-    text-align: center;
-    font-size: 90px;
+}
+
+div .logo{
+    width: 40rem;
+    margin: 1rem;
 }
 
 h2{

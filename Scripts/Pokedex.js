@@ -45,13 +45,12 @@ const evaluaRespuesta = (res) =>{
 
 const asignaValoresPrincipales = (imgId, IdNombre, data) =>{
     if(data){
-        // console.log(data);
-        idPrincipal = data.id;
         setSrc(imgId, data.sprites.front_default);
         setInnerHTML(IdNombre, getIdNombre(data));
         setInnerHTML("Tipo", concatenaTextos(data.types, getTipos));
         setInnerHTML("Estadisticas", concatenaTextos(data.stats, getEstadisticas));
         setInnerHTML("Movimientos", concatenaTextos(data.moves, getMovimientos));
+        getPokemonAnteriorSiguiente(data.id);
     }
 }
 
@@ -68,22 +67,11 @@ const fetchPokemon = (imgId, IdNombre, Valor, Consulta, Evalua, Asigna) => {
         .then((data) => Asigna(imgId, IdNombre, data));
 }
 
-const getPokemon = () => {
-    fetchPokemon("imgPokemon", "Nombre", getNombrePokemon(), getApiUrl, evaluaRespuesta, asignaValoresPrincipales);
-    delay(50)
-        .then(() => {
-            console.log(idPrincipal)
-            if(idPrincipal > 0){
-                console.log(idPrincipal - 1)
-                fetchPokemon("imgPokemonAnt", "NombreAnt", idPrincipal - 1, getApiUrl, evaluaRespuesta, asignaValoresSecundarios);
-                console.log(idPrincipal + 1)
-                fetchPokemon("imgPokemonSig", "NombreSig", idPrincipal + 1, getApiUrl, evaluaRespuesta, asignaValoresSecundarios);
-            }
-        })
-    idPrincipal = 0;
-    console.log(idPrincipal)
+const getPokemonAnteriorSiguiente = (idPrincipal) => {
+    fetchPokemon("imgPokemonAnt", "NombreAnt", idPrincipal - 1, getApiUrl, evaluaRespuesta, asignaValoresSecundarios);
+    fetchPokemon("imgPokemonSig", "NombreSig", idPrincipal + 1, getApiUrl, evaluaRespuesta, asignaValoresSecundarios);
 }
 
-
-
-//rayquaza
+const getPokemon = () => {
+    fetchPokemon("imgPokemon", "Nombre", getNombrePokemon(), getApiUrl, evaluaRespuesta, asignaValoresPrincipales);
+}
